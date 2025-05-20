@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수 구현
+        function fxsum(a, b){
+            return a+b;
+        }
+        function getbig(a,b){
+            if (a>b)
+            return a;
+            else
+            return b;
+        }
+        let sum=(num1,num2) => num1+num2;
+        function rhq(n){
+            let rhq=0;
+            for(let i=1; i<=n;i++){
+                rhq+=i;
+            }
+            return rhq;
+        }
+        //함수 호출
+        document.write("rhq 호출"+ rhq(10)+"<br>");
+        document.write("화살표함수 호출"+ sum(10,20)+"<br>");
+        let a = parseInt(prompt("숫자1"));
+        let b = parseInt(prompt("숫자2"));
+        let result = getbig(a, b);
+        document.write(a+"과"+ b + "중 큰 수는"+" "+ result + "입니다");
+        function change(){
+            const test =document.getElementById("test");
+            test.style.background = "blue";
+        }
+    </script>
+    <h1>안녕하세요.</h1>
+    <h1 id="test" onclick="change()">대전대학교 핀테크프로그래밍 강좌입니다.</h1>
+</body>
+</html>
